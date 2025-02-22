@@ -1,0 +1,43 @@
+<!-- შექმენით მარტივი Login სისტემა,
+სადაც მომხმარებელი შეიყვანს მომხმარებლის სახელს და პაროლს.
+თუ ორივე ემთხვევა წინასწარ განსაზღვრულ მნიშვნელობებს, აჩვენეთ წარმატების შეტყობინება; წინააღმდეგ შემთხვევაში, აჩვენეთ შეცდომის შეტყობინება.
+
+HTMl-ში დაგჭირდებათ,
+
+2 input-ი, (სახელი და გვარისთვის),
+1 ღილაკი,რომელზე დაჭერისას შემოწმდება სახელი და პაროლი,
+p-თეგი რომ განვათავსოთ შეტყობინება წარმატებით შევედით თუ არა.
+
+JS: 
+ღილაკზე დაჭერისას გეშვება ფუნქცია, არგუმენტების გარეშე, რომელიც წამოიღებს inputeb-ში არსებულ მნიშვნელობას, შეამოწმებს თუ უდრის მაგალითად : 
+
+  user ცვლადი "admin"-ს და
+  pass ცვლადი "1234"-ს
+
+ამის მიხედვით შეცვლის paragraph-ის text content-ს.
+
+ჩაწერეთ GitHub Repositori-ის ლინკი. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="inputs">
+      <input type="text" id="singUp" placeholder="enter your name" required />
+      <input
+        type="password"
+        id="singUpPass"
+        placeholder="enter your password"
+        required
+      />
+      <button id="btn">submit</button>
+      <p id="paragraph"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
